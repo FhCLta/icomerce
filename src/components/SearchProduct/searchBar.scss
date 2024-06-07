@@ -1,0 +1,48 @@
+// VARIABLES
+$primary-color: #3498db;
+$border-color: #bdc3c7;
+$input-bg-color: #ffffff;
+$input-focus-bg: #ecf0f1;
+$button-color: #ffffff;
+$button-bg-color: #e74c3c;
+$button-hover-bg: #c0392b;
+$transition-duration: 0.3s;
+body {
+ background-color: #3498db !important
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+
+  &__input {
+    padding: 0.5rem 1rem;
+    border: 1px solid $border-color;
+    border-radius: 0.25rem;
+    background-color: $input-bg-color;
+    font-size: 1rem;
+    color: $primary-color;
+    transition: background-color $transition-duration ease;
+
+    &:focus {
+      background-color: $input-focus-bg;
+      outline: none;
+    }
+  }
+
+  &__button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: $button-bg-color;
+    color: $button-color;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color $transition-duration ease;
+
+    &:hover {
+      background-color: $button-hover-bg;
+    }
+  }
+}
